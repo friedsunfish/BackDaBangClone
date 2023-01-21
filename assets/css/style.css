@@ -1,0 +1,610 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 280px;
+  background-color: white;
+  background-image: url(../images/menu-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+header .head-container {
+  position: relative;
+  width: 1150px;
+  height: 123px;
+  margin: auto;
+}
+header .head-container .nav-logo {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 194px;
+}
+header .head-container .nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 20px;
+  display: flex;
+}
+header .head-container .nav .nav-bar {
+  display: flex;
+}
+header .head-container .nav .nav-bar li:not(:last-child) {
+  padding-right: 39px;
+  margin-left: 5px;
+  background-color: aquamarine;
+}
+header .head-container .nav .nav-bar li {
+  padding-left: 39px;
+}
+header .head-container .nav .nav-bar li a {
+  font-size: 15px;
+}
+header .head-container .top-bar {
+  display: flex;
+  height: 38px;
+  padding-top: 18px;
+  justify-content: end;
+  position: relative;
+}
+header .head-container .top-bar li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 20px 0 0;
+  z-index: 99;
+}
+header .head-container .top-bar li a {
+  font-size: 12px;
+  color: #8b8b8b;
+  padding: 5px;
+}
+header .head-container .top-bar li:not(:first-child):before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  margin: auto 0;
+  background-color: #202020;
+}
+header .head-container .top-bar .sns {
+  display: flex;
+  justify-content: space-around;
+  height: 20px;
+  width: 80px;
+  margin: auto 0;
+  margin-right: 10px;
+}
+header .head-container .top-bar .sns img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.submenu {
+  display: none;
+}
+
+.swiper-container {
+  width: 100%;
+  position: absolute;
+  top: 123px;
+}
+
+.swiper-container .swiper {
+  width: 1920px;
+  height: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.swiper .swiper-pagination {
+  position: absolute;
+  bottom: 30px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: white;
+  opacity: 1;
+  margin: 0 10px !important;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #ffe436;
+}
+
+.main_section {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 723px;
+}
+
+.main_section .main_sec .inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  margin: 0 auto;
+  padding: 81px 0 40px 45px;
+}
+
+.main_section .main_sec .inner p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.main_section .main_sec {
+  margin-bottom: 10px;
+}
+
+.main_section .row1 {
+  position: relative;
+  background-image: url(../images/main_sec1.jpg);
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 230px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.main_section .row1 .inner {
+  width: 1150px;
+  height: 100px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.main_section .main_sec .fresh_coffee {
+  overflow: hidden;
+  position: relative;
+}
+.main_section .main_sec .fresh_coffee:hover > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1.1, 1.1);
+}
+.main_section .main_sec .fresh_coffee:not(:hover) > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1, 1);
+}
+
+.main_section .main_sec .fresh_coffee .inner h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #6b4d30;
+}
+.main_section .main_sec .fresh_coffee .inner h1::after {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 2px;
+  margin: 28px 0;
+  background: #7f5b39;
+}
+
+.main_section .main_sec .fresh_coffee .button_area .btn {
+  margin-top: 200px;
+}
+
+.main_section .row3 {
+  width: 100%;
+  display: flex;
+}
+
+.main_section .row3 .valrious_beverage {
+  overflow: hidden;
+  margin-right: 10px;
+  position: relative;
+  width: 60%;
+}
+.main_section .row3 .valrious_beverage:hover > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1.1, 1.1);
+}
+.main_section .row3 .valrious_beverage:not(:hover) > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1, 1);
+}
+.main_section .row3 .valrious_beverage .inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-25%);
+  width: 60%;
+  margin: 0 auto;
+  padding: 81px 0 40px 45px;
+}
+.main_section .row3 .valrious_beverage .inner h1 {
+  color: #071f60;
+}
+.main_section .row3 .valrious_beverage .inner h1::after {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 2px;
+  margin: 28px 0;
+  background: #071f60;
+}
+.main_section .row3 .valrious_beverage .button_area .btn {
+  margin-top: 200px;
+}
+
+.main_section .row3 .sweet_paiksccino {
+  overflow: hidden;
+  position: relative;
+  width: 40%;
+}
+.main_section .row3 .sweet_paiksccino:hover > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1.1, 1.1);
+}
+.main_section .row3 .sweet_paiksccino:not(:hover) > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1, 1);
+}
+.main_section .row3 .sweet_paiksccino .inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-75%);
+  width: 60%;
+  margin: 0 auto;
+  padding: 81px 0 40px 45px;
+}
+.main_section .row3 .sweet_paiksccino .inner h1 {
+  color: #f1ae1d;
+}
+.main_section .row3 .sweet_paiksccino .inner h1::after {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 2px;
+  margin: 28px 0;
+  background: #f1ae1d;
+}
+.main_section .row3 .sweet_paiksccino .button_area .btn {
+  margin-top: 200px;
+}
+
+.main_section .row4 {
+  display: flex;
+  justify-content: flex-end;
+}
+.main_section .row4 .small_box {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  width: calc(47% - 10px);
+  margin-right: 10px;
+}
+.main_section .row4 .small_box .find_store {
+  position: relative;
+  max-width: 504px;
+  width: 504px;
+  height: 291px;
+  margin-bottom: 10px;
+  border: 2px solid #071f60;
+}
+.main_section .row4 .small_box .find_store .inner {
+  width: 504px;
+  height: 291px;
+  box-sizing: border-box;
+  padding: 48px 37px 42px 37px;
+}
+.main_section .row4 .small_box .find_store .inner h1 {
+  font-size: 35px;
+  margin-bottom: 11.2px;
+}
+.main_section .row4 .small_box .find_store .inner p {
+  font-size: 15px;
+}
+.main_section .row4 .small_box .find_store .inner .find_area {
+  position: relative;
+  width: 326px;
+  height: 40px;
+  margin-top: 90px;
+}
+.main_section .row4 .small_box .find_store .inner .find_area .find {
+  width: 326px;
+  height: 40px;
+  border: 2px solid #071f60;
+  box-sizing: border-box;
+}
+.main_section .row4 .small_box .find_store .inner .search {
+  position: absolute;
+  top: 8.5px;
+  right: 3px;
+  width: 23px;
+  height: 23px;
+}
+.main_section .row4 .small_box .find_store .inner .search > img {
+  width: 23px;
+  height: 23px;
+}
+.main_section .row4 .small_box .franchise {
+  position: relative;
+  max-width: 504px;
+  width: 504px;
+  height: 291px;
+  background: url(../images/main_sec6.png) no-repeat bottom right;
+  background-size: 248px 243px;
+  border: 2px solid #071f60;
+}
+.main_section .row4 .small_box .franchise .inner {
+  width: 504px;
+  height: 291px;
+  box-sizing: border-box;
+  padding: 48px 37px 42px 37px;
+}
+.main_section .row4 .small_box .franchise .inner h1 {
+  font-size: 35px;
+  margin-bottom: 11.2px;
+}
+.main_section .row4 .small_box .franchise .inner p {
+  font-size: 15px;
+}
+.main_section .row4 .Tasty_IceCream_Dessert {
+  overflow: hidden;
+  position: relative;
+  width: calc(53% - 10px);
+}
+.main_section .row4 .Tasty_IceCream_Dessert:hover > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1.1, 1.1);
+}
+.main_section .row4 .Tasty_IceCream_Dessert:not(:hover) > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease;
+  transform: scale(1, 1);
+}
+.main_section .row4 .Tasty_IceCream_Dessert .inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-75%);
+  width: 60%;
+  margin: 0 auto;
+  padding: 81px 0 40px 45px;
+}
+.main_section .row4 .Tasty_IceCream_Dessert .inner h1 {
+  color: #ffffff;
+}
+.main_section .row4 .Tasty_IceCream_Dessert .inner h1::after {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 2px;
+  margin: 28px 0;
+  background: #ffffff;
+}
+.main_section .row4 .Tasty_IceCream_Dessert .inner p {
+  color: #ffffff;
+}
+.main_section .row4 .Tasty_IceCream_Dessert .button_area .btn {
+  margin-top: 160px;
+}
+
+body {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-size: 100%;
+  color: #202020;
+  width: 100%;
+}
+
+a {
+  text-decoration-line: none;
+  color: #202020;
+  display: block;
+}
+
+span {
+  font-size: 16px;
+  font-weight: 800;
+  color: #564e00;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #071f60;
+  margin: 4.8px;
+}
+
+p {
+  font-size: 15px;
+  color: #202020;
+  line-height: 150%;
+}
+
+img {
+  display: block;
+}
+
+.button_area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.button_area .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.button_area .btn::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #080406;
+  transition: all 0.3s ease;
+}
+.button_area .btn::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: #080406;
+  transition: all 0.3s ease;
+}
+
+.button_area .btn:hover {
+  background-image: url(../images/btn1-on.png);
+}
+.button_area .btn:hover::after, .button_area .btn:hover::before {
+  transform: rotate(180deg);
+  opacity: 0;
+}
+
+.button_area .btn2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../images/btn1-on.png);
+}
+.button_area .btn2::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  background-image: url(../images/store-ico.png);
+  background-size: 23px 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.button_area .btn2:hover:after {
+  display: none;
+}
+
+.sns_sec {
+  padding: 60px 0;
+}
+.sns_sec .sns_container .text_area {
+  text-align: center;
+}
+.sns_sec .sns_container .text_area .sns_letter {
+  font-size: 23px;
+  font-weight: 800;
+  font-family: "Nanum Myeongjo", sans-serif;
+  letter-spacing: 3px;
+  color: #202020;
+  margin: 0 0 8px;
+}
+.sns_sec .sns_container .text_area .sns_tag {
+  font-size: 16px;
+}
+.sns_sec .sns_container .text_area .sns_tag::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50px;
+  border-bottom: 1px solid #0e347e;
+}
+.sns_sec .sns_container .text_area .sns_tag span {
+  font-weight: 400;
+  color: #999999;
+}
+.sns_sec .sns_container .text_area .sns_ico {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 39px;
+}
+.sns_sec .sns_container .text_area .sns_ico .facebook {
+  height: 32px;
+  width: 32px;
+  margin-right: 20px;
+}
+.sns_sec .sns_container .text_area .sns_ico .facebook a img {
+  height: 32px;
+  width: 32px;
+}
+.sns_sec .sns_container .text_area .sns_ico .insta {
+  height: 32px;
+  width: 32px;
+}
+.sns_sec .sns_container .text_area .sns_ico .insta a img {
+  height: 32px;
+  width: 32px;
+}
+
+footer {
+  width: 100%;
+  height: 260px;
+  border-top: 3px solid #ffe600;
+}
+footer .footer_area {
+  width: 1150px;
+  max-height: 260px;
+  margin: 0 auto;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+footer .footer_area a .flogo {
+  width: 179px;
+  height: 47px;
+  margin: 0 auto;
+}
+footer .footer_area .footer_letter_area {
+  padding-top: 30px;
+}
+footer .footer_area .footer_letter_area .footer_letter {
+  text-align: center;
+}
+footer .footer_area .footer_letter_area .footer_letter > span {
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 400;
+  color: #262626;
+  position: relative;
+  padding: 0 10px;
+}
+footer .footer_area .footer_letter_area .footer_letter span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 3px;
+  width: 1px;
+  height: 10px;
+  background-color: #262626;
+}
+footer .footer_area .footer_letter_area .copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #262626;
+  margin-top: 32px;
+}

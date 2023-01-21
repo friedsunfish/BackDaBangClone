@@ -1,0 +1,101 @@
+body {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  font-size: 100%;
+  color: #202020;
+  width: 100%;
+}
+
+a {
+  text-decoration-line: none;
+  color: #202020;
+  display: block;
+}
+span {
+  font-size: 16px;
+  font-weight: 800;
+  color: #564e00;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: #071f60;
+  margin: 4.8px;
+}
+p {
+  font-size: 15px;
+  color: #202020;
+  line-height: 150%;
+}
+img {
+  //display: block한이유 -> img inline-block이라서 2px정도 틈새생김
+  display: block;
+}
+// 플러스 hover 이미지변환 버튼
+// + 모양 이번에는 연습으로 가상요소로 구현
+.button_area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.button_area .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #080406;
+    transition: all 0.3s ease;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: #080406;
+    transition: all 0.3s ease;
+  }
+}
+.button_area .btn:hover {
+  background-image: url(../images/btn1-on.png);
+  &::after,
+  &::before {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+.button_area .btn2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../images/btn1-on.png);
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    background-image: url(../images/store-ico.png);
+    background-size: 23px 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:hover:after {
+    display: none;
+  }
+}
